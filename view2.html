@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>Veterinaria</title>
+
+		<link rel="stylesheet" href="assets/css/demo.css" />
+		<link rel="stylesheet" href="assets/css/jquery.dmenu.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+		<style>
+			.logo
+			{
+				width: 180px;
+				margin-top: 15px;
+			}
+			.header-menu
+			{
+				background: #cdcecf;
+			}
+			.dm-menu
+			{
+				--dm-bg: #255280;
+				--dm-color: #fff;
+				--dm-item-current-bg: #fff;
+				--dm-item-current-color: #333;
+				--dm-item-hover-bg: #54b4eb;
+				--dm-item-hover-color: #fff;
+			}
+			.header-slider
+			{
+				margin-top: 20px;
+			}
+		</style>
+
+		<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="assets/js/jquery.dmenu.js"></script>
+	</head>
+	<body>
+
+		<div class="page">
+			<div class="header">
+				<div class="header-menu">
+					<div class="container">
+						<img src="assets/img/logo.png" class="logo" width="200" height="110"  />
+						<nav id="menu">
+							<ul>
+								<li class="SubmenuTabs IconHidden">
+									<a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+								</li>
+								<li>
+									<a href="index.html#instituto"></i> Institution</a>
+								</li>
+								<li>
+									<a href="index.html#perfil">Perfil profesional</a>
+								</li>
+								<li>
+									<a href="index.html#acceso">Requisitos de acceso</a>
+								</li>
+								<li>
+									<a href="index.html#noticias">Noticias</a>
+								</li>	
+								<li>
+									<a href="index.html#galeria">Galeria</a>
+								</li>	
+							</ul>
+						</nav>
+					
+						<script>
+							$(function() {
+								$(window).resize();
+							});
+							$('#menu').dmenu({
+								menu 	: {
+									border			: false,
+									logo			: false,
+									align			: false
+								},
+								item	: {
+									bg				: true,
+									border 			: false,
+									subindicator	: true,
+
+									fit			: [
+										{
+											items 		: null,
+											fitter 		: 'icon-hide',
+											order		: 'all'
+										},
+										{
+											items 		: null,
+											fitter 		: 'icon-only',
+											order		: 'all'
+										},
+										{
+											items 		: ':not(.dm-item_align-right)',
+											fitter 		: 'submenu',
+											order		: 'rtl'
+										},
+										{
+											items 		: ':not(.dm-item_align-right)',
+											fitter 		: 'hide',
+											order		: 'rtl'
+										}
+									]
+								},
+								submenu	: {
+									arrow			: false,
+									border			: true,
+									shadow			: true
+								},
+								subitem	: {
+									bg				: true,
+									border			: false
+								}
+
+							});
+						</script>
+					</div> <!-- /container -->
+				</div> <!-- /header-menu -->
+				
+			</div> <!-- /header -->
+
+		</div> <!-- /page -->
+		
+		
+         <!-- Noticias -->    		
+		
+		<section class="">	
+						<h1 class="font-titulo">Las 10 cualidades esenciales del buen docente</h1>
+				
+					<div class="img-princicpal">
+						<img src="assets/img/not3.jpg" width="640" height="400">
+					</div>
+					
+					<div class="decricao-principal">
+						<article>
+							<p>Dedicarse a la docencia es una profesión muy vocacional, donde tiene gran peso la motivación por transmitir conocimientos y estar en contacto con estudiantes y profesionales deseosos de seguir aprendidendo y evolucionando.
+Aunque parezca una profesión sencilla y fluida, es de las especialidades que suponen un mayor reto profesional, sobre todo para los profesores que se dedican a la formacion de estudiantes en Primaria y Secundaria.</p>
+							<p>En parte, será responsabildiad de ellos que los alumnos sientan motivación por aprender, desarrollen sus competencias básicas y tengan la ilusión de desarrollar una carrera profesional y una formación universitaria.</p>
+						</article>
+					</div>   
+						
+			</section>
+		
+		
+		
+		
+		
+        <!-- /Noticias -->    
+
+			<footer id="contacto">
+				<h1 class="font-titulo1">Ubicación</h1>
+
+            
+					<div class="cont">
+						<div class="local">
+							<article> 
+							<p>Coordinadores de Carrera</p>
+							<p>Coordinadores: León Iribarne y Rosario Lairihoy</p>
+							<p>Facultad de Veterinaria</p>
+							<p>Sedes: Salto - Paysandú - Rivera</p>
+							</article> 
+						
+						</div>
+						<div class="mapa">    
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3423.8932776092747!2d-55.53466278469481!3d-30.88964637806163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a9fe56f2f02113%3A0x8ab11e859d8cb551!2sUERGS+-+SANTANA+DO+LIVRAMENTO!5e0!3m2!1spt-BR!2sbr!4v1566245825007!5m2!1spt-BR!2sbr" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+			
+			</footer>
+
+	</body>
+</html>

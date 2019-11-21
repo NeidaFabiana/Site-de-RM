@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>Veterinaria</title>
+
+		<link rel="stylesheet" href="assets/css/demo.css" />
+		<link rel="stylesheet" href="assets/css/jquery.dmenu.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+	    	
+		<style>
+			.logo
+			{
+				width: 180px;
+				margin-top: 15px;
+			}
+			.header-menu
+			{
+				background: #cdcecf;
+			}
+			.dm-menu
+			{
+				--dm-bg: #255280;
+				--dm-color: #fff;
+				--dm-item-current-bg: #fff;
+				--dm-item-current-color: #333;
+				--dm-item-hover-bg: #54b4eb;
+				--dm-item-hover-color: #fff;
+			}
+			.header-slider
+			{
+				margin-top: 20px;
+			}
+		</style>
+ 
+
+		<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="assets/js/jquery.dmenu.js"></script>
+	</head>
+	<body>
+
+		<div class="page">
+			<div class="header">
+				<div class="header-menu">
+					<div class="container">
+						<img src="assets/img/logo.png" class="logo" width="200" height="110"  />
+						<nav id="menu">
+							<ul>
+								<li class="SubmenuTabs IconHidden">
+									<a href="#"><i class="fas fa-home"></i> Inicio</a>
+								</li>
+								<li>
+									<a href="#instituto"></i> Institution</a>
+								</li>
+								<li>
+									<a href="#perfil">Perfil profesional</a>
+								</li>
+								<li>
+									<a href="#acceso">Requisitos de acceso</a>
+								</li>
+								<li>
+									<a href="#noticia">Noticias</a>
+								</li>	
+								<li>
+									<a href="#galeria">Galeria</a>
+								</li>	
+							</ul>
+						</nav>
+					
+						<script>
+							$(function() {
+								$(window).resize();
+							});
+							$('#menu').dmenu({
+								menu 	: {
+									border			: false,
+									logo			: false,
+									align			: false
+								},
+								item	: {
+									bg				: true,
+									border 			: false,
+									subindicator	: true,
+
+									fit			: [
+										{
+											items 		: null,
+											fitter 		: 'icon-hide',
+											order		: 'all'
+										},
+										{
+											items 		: null,
+											fitter 		: 'icon-only',
+											order		: 'all'
+										},
+										{
+											items 		: ':not(.dm-item_align-right)',
+											fitter 		: 'submenu',
+											order		: 'rtl'
+										},
+										{
+											items 		: ':not(.dm-item_align-right)',
+											fitter 		: 'hide',
+											order		: 'rtl'
+										}
+									]
+								},
+								submenu	: {
+									arrow			: false,
+									border			: true,
+									shadow			: true
+								},
+								subitem	: {
+									bg				: true,
+									border			: false
+								}
+
+							});
+						</script>
+					</div> <!-- /container -->
+				</div> <!-- /header-menu -->
+				
+			</div> <!-- /header -->
+
+		</div> <!-- /page -->
+		
+			
+			<section class="" id="instituto">	
+				<h1 class="font-titulo">Institución</h1>
+				
+					<div class="img-princicpal">
+						<img src="assets/img/udelar.jpg" width="640" height="400">
+					</div>
+					
+					<div class="decricao-principal">
+						<article>
+							<p>La Universidad de la República (UDELAR) es la institución de educación superior y de investigación más grande de Uruguay. Se trata de una universidad de carácter público, autónoma y cogobernada por sus docentes, estudiantes y egresados. </p>
+							<p>Fue inaugurada el 18 de Julio de 1849, cuando se realiza su inauguración e instalación solemne en la capilla de San Ignacio en cumplimiento del Decreto del 14 de julio de 1849 promulgado por el Presidente Joaquín Suárez. </p>
+							<p>Sin embargo, el proceso de su fundación comienza dieciséis años antes, el 11 de junio de 1833, cuando la ley propuesta por el entonces Senador de la República, el Presbítero Dámaso Antonio Larrañaga, es aprobada. Esta ley dispuso la creación de nueve cátedras. Surge así la Casa de Estudios Generales que el 27 de mayo de 1838, el Presidente Manuel Oribe emite un decreto que convirtiéndola en la Universidad Mayor de la República</p>
+							<p>En colaboración con una amplia gama de actores institucionales y sociales, la Universidad de la República realiza también múltiples actividades orientadas al uso socialmente valioso del conocimiento y a la difusión de la cultura.</p>
+						</article>
+					</div>   
+						
+			</section>
+						
+			<section class="col_sect" id="perfil">	
+				<div class="contenido">	
+					</article>
+						<h1 class="font-titulo">Doctor en ciencias veterinarias</h1>
+						<h2 class="font-titulo2">Perfil profesional</h2>
+							<div class="decricao-principal1">	
+						
+							<div id="imag">	
+								<img src="assets/img/perfil.jpg" width="310" height="210" />
+							</div>
+							<div class="content">	
+								<p>Al Doctor en Ciencias Veterinarias de la Universidad de la República le corresponde la prestación de servicios esenciales para la economía nacional, como son el fomento de la producción, la vigilancia de los alimentos de origen animal en salvaguardia de la salud pública, así como el cuidado de los animales domésticos y de compañía, debiendo tomar conciencia de la importancia de su participación en el mejoramiento de la calidad de vida del hombre y del entorno, a través de la utilización racional de los animales.</p>
+							</div>
+						
+						</div> 	
+					</article>
+				</div> 			
+			</section>
+						
+			<section class="" id="acceso">	
+				<h1 class="font-titulo">Requisitos de acceso</h1>
+					<div class="decricao-principal">	
+						</article>
+							<p>El postulante a la carrera de Doctor en Ciencias Veterinarias de la Universidad de la República deberá presentar la siguiente documentación:</p>
+							<p>1 foto tipo carné.</p>
+							<p>Cédula de Identidad (Fotocopia).</p>
+							<p>Carné de Salud vigente (plazo para presentar hasta 31.10.15).</p>
+							<p>FORMULA 69 A (Los alumnos que se inscriban en forma condicional por exámenes pendientes deberán presentar el pase definitivo (fórmula 69 A), los días 2 y 3 de marzo) con destino: Facultad de Veterinaría- CENUR Litoral Norte - Salto.</p>
+							
+							<p>Inscripción con previas:</p>
+							<p>Fórmula 69B con fecha en que rendirá los exámenes (2 o más previasa salvar en febrero), Vencido este plazo, podrán permanecer cursando en forma condicional solamente quienes presenten fórmula 69 B (en la misma fecha: 2 y 3/3), EN LA QUE CONSTE UNA SOLA MATERIA PREVIA, la que deberá ser aprobada en el período especial de abril del CES.</p>
+						</article>
+					</div>
+				
+				
+						
+			</section>
+			
+			<section class="sect_noti" id="noticia">	
+				<h1 class="font-titulo">Noticias</h1>
+				
+					<div id="nuestros">
+					
+				<article class="item1">					
+					<div class="pro1">
+						<img src="assets/img/not1.jpg" width="270" height="210">
+						<h2><a href="view.html"><p><span>Becas para estudiantes: ¿qué opciones existen?</span></p></a></h2>
+						<p>Cada año se conceden más becas para estudiantes en Uruguay. Veamos los datos que se han publicado.</p>
+					</div>
+				</article >
+					
+				<article class="item1">
+					<div class="pro1">
+						<img src="assets/img/not2.jpg" width="270" height="210">
+						<h2><a href="view1.html"><p>Harvard becas para extranjeros: todo lo que necesitas saber</p></a></h2>
+						<p>Cada año, las listas de las mejores universidades, como el Academic Ranking of World Universities (ARWU). </p>
+					</div>
+				</article>
+					
+				<article class="item1">
+					<div class="pro1">
+						<img src="assets/img/not3.jpg" width="270" height="210" >
+						<h2><a href="view2.html"><p>Las 10 cualidades esenciales del buen docente</p></a></h2>
+						<p>Todo buen docente reúne estas cualidades y las enfoca para motivar a sus alumnos. </p>
+					</div>
+				</article>		
+					
+				</div>
+				
+					<div>
+					<a class="boton" href="noticias.html">Ver mas...</a>
+					</div>
+					
+						
+			</section>
+			
+			<section class="" id="galeria">	
+				<h1 class="font-titulo">Galeria</h1>
+				
+				
+				 <div class="container py-3">
+      <div class="gallery" style="display:none;">
+        <img data-gallery-tag="Udelar" class="gallery-item" src="assets/img/img1.jpg"/>
+        <img data-gallery-tag="Udelar" class="gallery-item" src="assets/img/img2.jpg"/>
+        <img data-gallery-tag="Udelar" class="gallery-item" src="assets/img/img3.jpg"/>
+        <img data-gallery-tag="Udelar" class="gallery-item" src="assets/img/img4.jpg"/>
+        <img data-gallery-tag="Udelar" class="gallery-item" src="assets/img/img5.jpg"/>
+        <img data-gallery-tag="Udelar" class="gallery-item" src="assets/img/img6.jpg"/>
+        <img data-gallery-tag="Udelar" class="gallery-item" src="assets/img/img7.jpg"/>
+       
+      <hr />
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="assets/js/maugallery.js"></script>
+    <script src="assets/js/scripts.js"></script>
+				
+						
+			</section>
+						
+			<footer id="contacto">
+				<h1 class="font-titulo1">Ubicación</h1>
+
+            
+					<div class="cont">
+						<div class="local">
+							<article> 
+							<p>Coordinadores de Carrera</p>
+							<p>Coordinadores: León Iribarne y Rosario Lairihoy</p>
+							<p>Facultad de Veterinaria</p>
+							<p>Sedes: Salto - Paysandú - Rivera</p>
+							</article> 
+						
+						</div>
+						<div class="mapa">    
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3423.8932776092747!2d-55.53466278469481!3d-30.88964637806163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a9fe56f2f02113%3A0x8ab11e859d8cb551!2sUERGS+-+SANTANA+DO+LIVRAMENTO!5e0!3m2!1spt-BR!2sbr!4v1566245825007!5m2!1spt-BR!2sbr" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+			
+			</footer>
+
+	</body>
+</html>
